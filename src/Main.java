@@ -4,16 +4,14 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-/*        Customer issao = new Customer("issao@gmail.com", "11998769190", "1989-03-01", "Rua Cristóvão Lins, 115");
-        Request request1 = new Request("xpto", "loren100");
-        Request request2 = new Request("xwyz", "loren100");
-        Request request3 = new Request("abcd", "loren100");
+        PessoaFisica issao = new PessoaFisica ("issao@gmail.com", "11998769190", "1989-03-01", "Rua Cristóvão Lins, 115", "23555643450", "Issao", "Takeuchi");
+        Request request1 = new Request("001", "xpto", "loren100");
+        Request request2 = new Request("002", "xwyz", "loren100");
+        Request request3 = new Request("003", "abcd", "loren100");
 
         issao.addRequest(request1);
         issao.addRequest(request2);
         issao.addRequest(request3);
-
-
 
         request1.acceptRequest("john");
         request1.deliverJob();
@@ -36,10 +34,7 @@ public class Main {
         System.out.println(issao.getTelephone());
 
 
-        System.out.println(issao.getRequests());
 
-
-*/
     }
 
 }

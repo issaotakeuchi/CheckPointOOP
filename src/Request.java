@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.PrimitiveIterator;
 
 public class Request {
-    private int requestNumber = 0;
+    private String requestNumber;
     private String subject;
     private String details;
     private String status;
@@ -11,8 +11,8 @@ public class Request {
     private String comments;
 
     //constructor
-    public Request(String subject, String details) {
-        this.requestNumber++;
+    public Request(String requestNumber, String subject, String details) {
+        this.requestNumber = requestNumber;
         this.subject = subject;
         this.details = details;
         this.dateOfRequest = LocalDate.now();
@@ -23,7 +23,7 @@ public class Request {
     }
 
     //getters and setters
-    public int getRequestNumber() {
+    public String getRequestNumber() {
         return requestNumber;
     }
 
